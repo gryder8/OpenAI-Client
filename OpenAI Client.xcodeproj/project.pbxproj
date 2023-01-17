@@ -16,6 +16,10 @@
 		8696AA7D29766C0F000E26B1 /* OpenAI_ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8696AA7C29766C0F000E26B1 /* OpenAI_ClientTests.swift */; };
 		8696AA8729766C0F000E26B1 /* OpenAI_ClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8696AA8629766C0F000E26B1 /* OpenAI_ClientUITests.swift */; };
 		8696AA8929766C0F000E26B1 /* OpenAI_ClientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8696AA8829766C0F000E26B1 /* OpenAI_ClientUITestsLaunchTests.swift */; };
+		8696AA9729766CC5000E26B1 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8696AA9629766CC5000E26B1 /* OpenAISwift */; };
+		8696AA9929766CF3000E26B1 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8696AA9829766CF3000E26B1 /* APICaller.swift */; };
+		8696AA9B29767AFF000E26B1 /* OpenAIDialogueEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8696AA9A29767AFF000E26B1 /* OpenAIDialogueEntry.swift */; };
+		8696AA9D297682AB000E26B1 /* ResponseProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8696AA9C297682AB000E26B1 /* ResponseProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,9 @@
 		8696AA8229766C0F000E26B1 /* OpenAI ClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenAI ClientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8696AA8629766C0F000E26B1 /* OpenAI_ClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAI_ClientUITests.swift; sourceTree = "<group>"; };
 		8696AA8829766C0F000E26B1 /* OpenAI_ClientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAI_ClientUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8696AA9829766CF3000E26B1 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		8696AA9A29767AFF000E26B1 /* OpenAIDialogueEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIDialogueEntry.swift; sourceTree = "<group>"; };
+		8696AA9C297682AB000E26B1 /* ResponseProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8696AA9729766CC5000E26B1 /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +107,12 @@
 		8696AA6429766C0D000E26B1 /* OpenAI Client */ = {
 			isa = PBXGroup;
 			children = (
+				8696AA9829766CF3000E26B1 /* APICaller.swift */,
 				8696AA6529766C0D000E26B1 /* AppDelegate.swift */,
 				8696AA6729766C0D000E26B1 /* SceneDelegate.swift */,
 				8696AA6929766C0D000E26B1 /* ViewController.swift */,
+				8696AA9C297682AB000E26B1 /* ResponseProgressView.swift */,
+				8696AA9A29767AFF000E26B1 /* OpenAIDialogueEntry.swift */,
 				8696AA6B29766C0D000E26B1 /* Main.storyboard */,
 				8696AA6E29766C0F000E26B1 /* Assets.xcassets */,
 				8696AA7029766C0F000E26B1 /* LaunchScreen.storyboard */,
@@ -143,6 +154,9 @@
 			dependencies = (
 			);
 			name = "OpenAI Client";
+			packageProductDependencies = (
+				8696AA9629766CC5000E26B1 /* OpenAISwift */,
+			);
 			productName = "OpenAI Client";
 			productReference = 8696AA6229766C0D000E26B1 /* OpenAI Client.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +229,9 @@
 				Base,
 			);
 			mainGroup = 8696AA5929766C0D000E26B1;
+			packageReferences = (
+				8696AA9529766CC5000E26B1 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = 8696AA6329766C0D000E26B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8696AA9D297682AB000E26B1 /* ResponseProgressView.swift in Sources */,
 				8696AA6A29766C0D000E26B1 /* ViewController.swift in Sources */,
+				8696AA9B29767AFF000E26B1 /* OpenAIDialogueEntry.swift in Sources */,
 				8696AA6629766C0D000E26B1 /* AppDelegate.swift in Sources */,
 				8696AA6829766C0D000E26B1 /* SceneDelegate.swift in Sources */,
+				8696AA9929766CF3000E26B1 /* APICaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +622,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8696AA9529766CC5000E26B1 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8696AA9629766CC5000E26B1 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8696AA9529766CC5000E26B1 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8696AA5A29766C0D000E26B1 /* Project object */;
 }
