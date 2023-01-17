@@ -17,9 +17,6 @@ final class APICaller {
     
     private let maxTokens = 100 //arbitary
     
-    @frozen enum Constants {
-        static let key: String = "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"
-    }
     
     public func setup() {
         self.client = OpenAISwift(authToken: Constants.key)

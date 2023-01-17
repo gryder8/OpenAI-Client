@@ -20,6 +20,7 @@
 		8696AA9929766CF3000E26B1 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8696AA9829766CF3000E26B1 /* APICaller.swift */; };
 		8696AA9B29767AFF000E26B1 /* OpenAIDialogueEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8696AA9A29767AFF000E26B1 /* OpenAIDialogueEntry.swift */; };
 		8696AA9D297682AB000E26B1 /* ResponseProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8696AA9C297682AB000E26B1 /* ResponseProgressView.swift */; };
+		8696AA9F29768ED8000E26B1 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8696AA9E29768ED8000E26B1 /* APIKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		8696AA9829766CF3000E26B1 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		8696AA9A29767AFF000E26B1 /* OpenAIDialogueEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIDialogueEntry.swift; sourceTree = "<group>"; };
 		8696AA9C297682AB000E26B1 /* ResponseProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseProgressView.swift; sourceTree = "<group>"; };
+		8696AA9E29768ED8000E26B1 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				8696AA6929766C0D000E26B1 /* ViewController.swift */,
 				8696AA9C297682AB000E26B1 /* ResponseProgressView.swift */,
 				8696AA9A29767AFF000E26B1 /* OpenAIDialogueEntry.swift */,
+				8696AA9E29768ED8000E26B1 /* APIKey.swift */,
 				8696AA6B29766C0D000E26B1 /* Main.storyboard */,
 				8696AA6E29766C0F000E26B1 /* Assets.xcassets */,
 				8696AA7029766C0F000E26B1 /* LaunchScreen.storyboard */,
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8696AA9D297682AB000E26B1 /* ResponseProgressView.swift in Sources */,
+				8696AA9F29768ED8000E26B1 /* APIKey.swift in Sources */,
 				8696AA6A29766C0D000E26B1 /* ViewController.swift in Sources */,
 				8696AA9B29767AFF000E26B1 /* OpenAIDialogueEntry.swift in Sources */,
 				8696AA6629766C0D000E26B1 /* AppDelegate.swift in Sources */,
